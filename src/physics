@@ -1,0 +1,109 @@
+Lbl ST
+ClrHome
+Menu("Select a type","Squiggle Equations",SQ,"Maxwell's Equations",MX,"Moments of Inertia",MI,"Rotation",RT,"Missing 3rd Equation",E3,"Projectile Motion",PM,"Oscillation Frequency",OS,"Wires",WR,"Exit",EX)
+Lbl SQ
+Menu("Select a type","LR",LR,"RC",RC)
+Lbl LR
+Disp "LR Squiggle Equations"
+Disp "Increasing:"
+Disp "? = ?0 (1 - e^(-Rt / L))"
+Disp "Decreasing:"
+Disp "? = ?0 e^(-Rt / L)"
+Pause 
+Goto ST
+Lbl RC
+Disp "RC Squiggle Equations"
+Disp "Increasing:"
+Disp "? = ?0 (1 - e^(-t / RC))"
+Disp "Decreasing:"
+Disp "? = ?0 e^(-t / RC)"
+Pause 
+Goto ST
+Lbl MX
+Disp "Maxwells Equations"
+Disp "Gauss's Law:"
+Disp "?E·dA = q / e0"
+Disp "Gauss's Magnetism Law:"
+Disp "?B·dA = 0"
+Disp "Faraday's Law:"
+Disp "?E·dl = - df/dt "
+Disp "Biot-Savart Law:"
+Disp "B = (µ0/4p) ? (I dl × r) / r^2"
+Pause 
+Goto ST
+Lbl MI
+Menu("Select a type","Cylinder",CY,"Hoop",HP,"Sphere",SP,"Rod",RD,"Parallel Axis Theorem",PR)
+Lbl CY
+Disp "Rotating Cylinder"
+Disp "Along axis:"
+Disp "1/2 MR²"
+Disp "Perpendicular to axis:"
+Disp "1/3 ML²"
+Pause 
+Goto ST
+Lbl HP
+Disp "Rotating Hoop"
+Disp "Along axis:"
+Disp "MR²"
+Disp "Perpendicular to axis:"
+Disp "1/2 MR²"
+Pause 
+Goto ST
+Lbl SP
+Disp "Rotating Sphere"
+Disp "Solid:"
+Disp "2/5 MR²"
+Disp "Hollow/Shell:"
+Disp "2/3 MR²"
+Pause 
+Goto ST
+Lbl RD
+Disp "Rotating Rod"
+Disp "Center pivot:"
+Disp "1/12 ML²"
+Disp "End pivot:"
+Disp "1/3 ML²"
+Pause 
+Goto ST
+Lbl PR
+Disp "Parallel Axis Theorem"
+Disp "I = I0 + ML²"
+Pause 
+Goto ST
+Lbl RT
+"Linear to Rotational Motion"
+Disp "x = r?"
+Disp "v = rw"
+Disp "a = ra"
+Pause 
+Goto ST
+Lbl E3
+Disp "x-x0 = ((v+v0) / 2) t"
+Pause 
+Goto ST
+Lbl PM
+Disp "Range:"
+Disp "(v0² sin(2t)) / g"
+Disp "Time:"
+Disp "(2v0 sin(?)) / g"
+Disp "Max height:"
+Disp "(v0 sin(?))² / (2g)"
+Disp "Cliff:"
+Disp "t = v(2g / h)"
+Pause 
+Goto ST
+Lbl OS
+Disp "Oscillating mass"
+Disp "attached to a spring:"
+Disp "w = v(k/m)"
+Pause 
+Goto ST
+Lbl WR
+Disp "Charge moving through a"
+Disp "magnetic field:"
+Disp "F = Bvq sin(?)"
+Disp "Force on a wire in a"
+Disp "magnetic field:"
+Disp "F = BIL sin(?)"
+Lbl EX
+Stop
